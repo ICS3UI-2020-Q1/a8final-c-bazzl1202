@@ -85,9 +85,6 @@ public class Main implements Runnable, ActionListener{
 
     // add the main panel to the window
     frame.add(mainPanel);
- 
-    
-
   }
 
   // method called when a button is pressed
@@ -110,17 +107,19 @@ public class Main implements Runnable, ActionListener{
       
       if( counterInteger >= 10 ){
         // set the counter input to same as before
-       counterInput.setText("" + counterInput);
+       counterInput.setText(counterInput + " ");
+
       }else{
         // add the increase value to the counter
-      int sum = increaseInteger + counterInteger;
+       int sum = increaseInteger + counterInteger;
 
-      // set the counter input to sum
-      counterInput.setText("" + sum);
+       // set the counter input to sum
+       counterInput.setText("" + sum);
       }
 
+    }else if(command.equals("Reset")){
+      counterInput.setText("0");
     }
-
   }
 
   // Main method to start our program
