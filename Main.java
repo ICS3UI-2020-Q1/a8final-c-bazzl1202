@@ -107,7 +107,7 @@ public class Main implements Runnable, ActionListener{
       
       if( counterInteger >= 10 ){
         // set the counter input to same as before
-       counterInput.setText(counterInput + " ");
+       counterInput.setText("" + counterText);
 
       }else{
         // add the increase value to the counter
